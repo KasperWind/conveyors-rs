@@ -10,6 +10,7 @@ pub struct Conv {
     pub motor: bool,
     pub sensor: bool,
     pub vel: f32,
+    pub pos: f32,
 }
 
 #[derive(Debug, Default)]
