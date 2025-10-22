@@ -4,6 +4,13 @@ use std::sync::Arc;
 use spdlog::info;
 use spdlog::sink::FileSink;
 
+pub struct Conv {
+    pub transfer_in: bool,
+    pub transfer_out: bool,
+    pub motor: bool,
+    pub sensor: bool,
+}
+
 #[derive(Debug, Default)]
 pub struct State {
     pub started: bool,
